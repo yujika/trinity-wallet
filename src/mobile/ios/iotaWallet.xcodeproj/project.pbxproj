@@ -714,6 +714,18 @@
 		600A0EEC2194F8D400222230 /* lv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lv; path = lv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		600A0EED2194F8D600222230 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		600A0EEE2194F8D800222230 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		600A0EEF2195082400222230 /* bg */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bg; path = bg.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		600A0EF02195083F00222230 /* hr-HR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "hr-HR"; path = "hr-HR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		600A0EF12195085200222230 /* et */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = et; path = et.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		600A0EF22195086200222230 /* ka */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ka; path = ka.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		600A0EF32195086C00222230 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		600A0EF42195088400222230 /* kn */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = kn; path = kn.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		600A0EF52195089900222230 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		600A0EF6219508AC00222230 /* fa */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fa; path = fa.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		600A0EF7219508D700222230 /* sr-Latn */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "sr-Latn"; path = "sr-Latn.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		600A0EF8219508F300222230 /* ta */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ta; path = ta.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		600A0EF9219508FE00222230 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		600A0EFA2195091600222230 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6014E910217E743000C88675 /* EntangledKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EntangledKit.framework; sourceTree = "<group>"; };
 		601BFCE820C367300097D329 /* RNShare.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RNShare.xcodeproj; path = "../node_modules/react-native-share/ios/RNShare.xcodeproj"; sourceTree = "<group>"; };
 		601BFCEF20C3677E0097D329 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
@@ -1616,6 +1628,18 @@
 				en,
 				cs,
 				sk,
+				bg,
+				"hr-HR",
+				et,
+				ka,
+				hu,
+				kn,
+				lt,
+				fa,
+				"sr-Latn",
+				ta,
+				th,
+				vi,
 			);
 			mainGroup = 3FA554CD0D5061D20FBDC112457CF26E;
 			productRefGroup = A6A8596B2605B2CC07FAC1A5D3842894 /* Products */;
@@ -2650,6 +2674,18 @@
 				600A0EEC2194F8D400222230 /* lv */,
 				600A0EED2194F8D600222230 /* cs */,
 				600A0EEE2194F8D800222230 /* sk */,
+				600A0EEF2195082400222230 /* bg */,
+				600A0EF02195083F00222230 /* hr-HR */,
+				600A0EF12195085200222230 /* et */,
+				600A0EF22195086200222230 /* ka */,
+				600A0EF32195086C00222230 /* hu */,
+				600A0EF42195088400222230 /* kn */,
+				600A0EF52195089900222230 /* lt */,
+				600A0EF6219508AC00222230 /* fa */,
+				600A0EF7219508D700222230 /* sr-Latn */,
+				600A0EF8219508F300222230 /* ta */,
+				600A0EF9219508FE00222230 /* th */,
+				600A0EFA2195091600222230 /* vi */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
