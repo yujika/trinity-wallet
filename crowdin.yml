@@ -10,5 +10,5 @@ files:
         sv-SE: sv-SE
         pt-BR: pt-BR
         es-419: es-LA
-  - source: /src/mobile/ios/localizations/en.xliff
-    translation: /src/mobile/ios/localizations/%osx_locale%.xliff
+  - source: /src/mobile/ios/en.lproj/InfoPlist.strings
+    translation: /src/mobile/ios/%osx_locale%.lproj/InfoPlist.strings
