@@ -11,7 +11,7 @@ export const MAX_ACC_LENGTH = 250;
  * @param {number} Max - Random byte max range
  * @returns {array} Random number array
  */
-export const randomBytes = (size, max) => {
+export const randomBytes = (size, max = 1) => {
     if (size !== parseInt(size, 10) || size < 0) {
         return false;
     }
@@ -27,6 +27,12 @@ export const randomBytes = (size, max) => {
     }
 
     return Array.from(bytes);
+};
+
+export const asyncRandomBytes = (size, max = 1) => {
+    return new Promise((resolve) => {
+        resolve(randomBytes(size, max));
+    });
 };
 
 /**
