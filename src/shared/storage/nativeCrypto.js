@@ -5,14 +5,25 @@ export default class StorageNativeCrypto {
     /**
      * Initialises a StorageNativeCrypto object
      * @param {function(number): Promise<Uint8Array>} randomBytesFn      Random bytes generator
-     * @param {function(string): Promise<Object>} getKeychainItemFn    Get an item from the keychain
-     * @param {function(string, string): Promise<boolean>} setKeychainItemFn    Add an item to the keychain
-     * @param {function(string): Promise<boolean>} removeKeychainItemFn Remove an item from the keychain
      */
-    constructor(randomBytesFn, getKeychainItemFn, setKeychainItemFn, removeKeychainItemFn) {
+    constructor(randomBytesFn) {
         this.randomBytesFn = randomBytesFn;
-        this.getKeychainItemFn = getKeychainItemFn;
-        this.setKeychainItemFn = setKeychainItemFn;
-        this.removeKeychainItemFn = removeKeychainItemFn;
     }
+
+    /**
+     * Generate a 64-byte encryption key
+     * @return {Promise<Int8Array>}               Encryption key
+     */
+    generateEncryptionKey() {
+        return this.randomBytesFn(64).then((bytes) => {
+            const signed = new Int8Array(bytes);
+            return signed;
+        });
+    }
+
+    // Methods to be implemented
+
+    // addEncryptionKeyToKeychain(passwordHash: String, key: Int8Array) -> Promise
+    // getEncryptionKeyFromKeychain(alias: string) -> Promise<Object>
+    // removeEncryptionKeyFromKeychain() -> Promise
 }

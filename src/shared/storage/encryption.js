@@ -9,5 +9,3 @@ export const generateEncryptionKey = (nativeCrypto) => {
         return signed;
     });
 };
-
-export const addEncryptionKeyToKeychain = (nativeCrypto) => {};

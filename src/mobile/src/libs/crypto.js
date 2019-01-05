@@ -58,6 +58,17 @@ export const stringToUInt8 = (string) => {
     return new TextEncoder('utf-8').encode(string);
 };
 
+export const Int8ToString = (Int8) => {
+    const uInt8 = new Uint8Array(Int8);
+    return new TextDecoder('utf-8').decode(uInt8);
+};
+
+export const stringToInt8 = (string) => {
+    const uInt8 = new TextEncoder('utf-8').encode(string);
+    const Int8 = new Int8Array(uInt8);
+    return Int8;
+};
+
 export const decodeBase64 = async (input) => {
     return await naclUtil.decodeBase64(input);
 };
