@@ -23,7 +23,7 @@ export default class StorageNativeCrypto {
 
     // Methods to be implemented
 
-    // addEncryptionKeyToKeychain(passwordHash: String, key: Int8Array) -> Promise
-    // getEncryptionKeyFromKeychain(alias: string) -> Promise<Object>
+    // addEncryptionKeyToKeychain(passwordHash: string, key: Int8Array) -> Promise
+    // getEncryptionKeyFromKeychain(passwordHash: string) -> Promise<Object>
     // removeEncryptionKeyFromKeychain() -> Promise
 }
