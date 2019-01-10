@@ -1,6 +1,7 @@
 import get from 'lodash/get';
 import each from 'lodash/each';
 import map from 'lodash/map';
+import CoinGecko from 'coingecko-api';
 import { formatChartData, getUrlTimeFormat, getUrlNumberFormat } from '../libs/utils';
 
 export const ActionTypes = {
@@ -10,6 +11,8 @@ export const ActionTypes = {
     SET_CURRENCY: 'IOTA/MARKET_DATA/SET_CURRENCY',
     SET_PRICE: 'IOTA/MARKET_DATA/SET_PRICE',
 };
+
+const cg = new CoinGecko();
 
 /**
  * Dispatch to set timeframe for IOTA time series price information
