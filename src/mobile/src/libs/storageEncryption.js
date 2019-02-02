@@ -25,4 +25,11 @@ export default class MobileNativeCrypto extends StorageNativeCrypto {
     async removeEncryptionKeyFromKeychain() {
         return await keychain.clear(ALIAS_STORAGE);
     }
+
+    async doesEncryptionKeyExistInKeychain() {
+        if (!await keychain.get(ALIAS_STORAGE)) {
+            return false;
+        }
+        return true;
+    }
 }
