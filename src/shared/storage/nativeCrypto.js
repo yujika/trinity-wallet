@@ -14,11 +14,10 @@ export default class StorageNativeCrypto {
      * Generate a 64-byte encryption key
      * @return {Promise<Int8Array>}               Encryption key
      */
-    generateEncryptionKey() {
-        return this.randomBytesFn(64).then((bytes) => {
-            const signed = new Int8Array(bytes);
-            return signed;
-        });
+    async generateEncryptionKey() {
+        const bytes = await this.randomBytesFn(64);
+        const signed = new Int8Array(bytes);
+        return signed;
     }
 
     // Methods to be implemented

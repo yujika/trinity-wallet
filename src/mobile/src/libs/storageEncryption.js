@@ -9,8 +9,8 @@ export default class MobileNativeCrypto extends StorageNativeCrypto {
         super(getRandomBytes);
     }
 
-    generateEncryptionKey() {
-        return super.generateEncryptionKey();
+    async generateEncryptionKey() {
+        return await super.generateEncryptionKey();
     }
 
     async addEncryptionKeyToKeychain(passwordHash, key) {

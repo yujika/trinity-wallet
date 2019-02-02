@@ -7,8 +7,8 @@ export default class DesktopNativeCrypto extends StorageNativeCrypto {
         super(asyncRandomBytes);
     }
 
-    generateEncryptionKey() {
-        return super.generateEncryptionKey();
+    async generateEncryptionKey() {
+        return await super.generateEncryptionKey();
     }
 
     async addEncryptionKeyToKeychain(passwordHash, key) {
