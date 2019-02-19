@@ -59,6 +59,22 @@ class About extends React.PureComponent {
 
                     <article>
                         <Scrollbar>
+                            <h5>0.5.0-RC1</h5>
+                            <ul>
+                                <li>- Update: Add data migration Retry and Change node functionallity</li>
+                                <li>- Fix: Account transition broken</li>
+                                <li>- Fix: Onboarding unique seed check raises error</li>
+                                <li>- Fix: Additional account onboarding freezes after first unsucsefull try</li>
+                                <li>- Fix: Unable to cancel history refresh without Ledger device</li>
+                                <li>- Fix: Receive closes automatically on Ledger account</li>
+                            </ul>
+                            <h5>0.5.0 alpha</h5>
+                            <ul>
+                                <li>- Update: Add node quorum</li>
+                                <li>- Update: Use Realm for account data persistance</li>
+                                <li>- Fix: Account names containing [] crashes wallet</li>
+                                <li>- Fix: Remove drag region from update bar on Windows</li>
+                            </ul>
                             <h5>0.4.6</h5>
                             <ul>
                                 <li>- Fix: Unexpected wallet behaviour with account names starting with a number</li>
